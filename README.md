@@ -1,5 +1,5 @@
 # PlushCalculator
-## 抱枕性价比计算器（现已更新到0.2版本！）
+##### 抱枕性价比计算器（现已更新到0.2版本！）
 https://jiahongzzz.github.io/PlushCalculator/PlushCalculator0.2.html
 
 ●抱枕性价比是用于衡量抱枕的实惠程度的量，由著名抱枕学家【守望时空33】
