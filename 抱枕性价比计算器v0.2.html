@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>抱枕性价比计算器</title>
+		
+		<style type="text/css">
+		body{background:#CDC673;}
+		h3{font-family:微软雅黑;font-size: 35px;text-align: center;}
+		h2{font-family:微软雅黑;font-size: 26px;text-align: center;}
+		#show input{width:511px;height:60px;font-size:30px;}
+		#cuttom input{width: 100px;height: 70px;font-size: 28px;}
+		#cuttom input:hover{background: lightgray;}
+		</style>
+		
+		<script>
+var d,price;
+var result;
+function calc()	//清除
+{
+	d = document.getElementById("text1").value;
+	price = document.getElementById("text2").value;
+	result = 10000*(price)/((4/3)*Math.PI*(d/2)**3);
+	document.getElementById("text3").value = result.toFixed(3);
+}
+		</script>
+		
+	</head>
+	
+	<body>
+			<h3>【抱枕性价比计算器】</h3>
+			
+			<div id="show" align="center">
+			
+				<h2>请输入抱枕的直径(cm)：</h2>
+				<input type="text" id="text1" >
+				
+				<h2>请输入抱枕的价格(元)：</h2>
+				<input type="text" id="text2" >
+				
+				<div id="cuttom" align="center"><br>
+				<input type="button" value="计算！" onclick="calc()">
+				</div>
+				
+				<h2>抱枕性价比(‱元/cm³)：</h2>
+				<input type="text" id="text3" ><br><br>
+
+			</div>
+			
+			<HR>
+			<h2>关于抱枕性价比</h2>
+			<div align="center" >
+			<h4>抱枕性价比是用于衡量抱枕的实惠程度的量，由著名抱枕学家【守望时空33】
+			<br>于2022年5月26日首次提出。该量的定义为抱枕价格（元）与其体积（立方厘
+			<br>米）之比，单位为万分之一元每立方厘米，记作‱元/cm³。</h4>
+			</div>
+	</body>
+	
+</html>
